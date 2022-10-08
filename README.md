@@ -37,7 +37,7 @@ On the host, prepare the following directory structure:
         * Server name: localhost,1433
         * Username: sa
         * Password: MyStrong(!)Password
-<br/>
+
 * Data directory binding.
     * The container is preconfigured to mount data folders from the container to host.
     * On the host, prepare folders with the following structure.
@@ -65,7 +65,7 @@ On the host, prepare the following directory structure:
         * Server name: localhost,1444
         * Username: sa
         * Password: MyStrong(!)Password
-<br/>
+
 * Data directory binding.
     * The container is preconfigured to mount data folders from the container to host.
     * On the host, prepare folders with the following structure:
@@ -99,6 +99,7 @@ On the host, prepare the following directory structure:
         * EnableSSL: False
 <br/>
 * dotNet client sample.
+
 ![SMTP-dotNet-client](/doc/smtp4dev_dotNet_client.png)
 
 ### Rabbit MQ (Version 3.8)
@@ -113,10 +114,9 @@ On the host, prepare the following directory structure:
     * Client configuration.
         * Server name: localhost
         * Port: 5672
-<br/>
+        
 * Data directory binding.
     * The container is preconfigured to mount data folders from the container to host.
-
     * On the host, prepare folders with the following structure:
 
             D:
