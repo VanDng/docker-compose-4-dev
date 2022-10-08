@@ -1,12 +1,6 @@
 # Startup
 
-```
-docker compose -f <DockerCompseFilePath> up -d
-docker compose -f <DockerCompseFilePath> up -d <ServiceName>
-```
-
 Containers are configured to persist its data, so that data do not get lost when containers are restarted or even deleted and fired up again.
-
 On the host, prepare the following directory structure:
 
     D:
@@ -22,6 +16,12 @@ On the host, prepare the following directory structure:
                 secrets
                 backup
             rabbitmq3.8
+            
+Now, I can start all or a certain service I want to startup.
+```
+docker compose -f <DockerCompseFilePath> up -d
+docker compose -f <DockerCompseFilePath> up -d <ServiceName>
+```
 
 # Known issues and solutions
 
