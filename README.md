@@ -97,7 +97,7 @@ docker compose -f <DockerCompseFilePath> up -d <ServiceName>
         * Password: < Empty >
         * UseDefaultCredentials: True
         * EnableSSL: False
-<br/>
+
 * dotNet client sample.
 
 ![SMTP-dotNet-client](/doc/smtp4dev_dotNet_client.png)
