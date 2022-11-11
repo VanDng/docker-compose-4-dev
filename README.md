@@ -1,12 +1,6 @@
 # Startup
 
-```
-docker compose -f <DockerCompseFilePath> up -d
-docker compose -f <DockerCompseFilePath> up -d <ServiceName>
-```
-
 Containers are configured to persist its data, so that data do not get lost when containers are restarted or even deleted and fired up again.
-
 On the host, prepare the following directory structure:
 
     D:
@@ -22,6 +16,12 @@ On the host, prepare the following directory structure:
                 secrets
                 backup
             rabbitmq3.8
+            
+Now, I can start all or a certain service I want to startup.
+```
+docker compose -f <DockerCompseFilePath> up -d
+docker compose -f <DockerCompseFilePath> up -d <ServiceName>
+```
 
 # Known issues and solutions
 
@@ -37,7 +37,7 @@ On the host, prepare the following directory structure:
         * Server name: localhost,1433
         * Username: sa
         * Password: MyStrong(!)Password
-<br/>
+
 * Data directory binding.
     * The container is preconfigured to mount data folders from the container to host.
     * On the host, prepare folders with the following structure.
@@ -98,8 +98,9 @@ On the host, prepare the following directory structure:
         * Password: < Empty >
         * UseDefaultCredentials: True
         * EnableSSL: False
-<br/>
+
 * dotNet client sample.
+
 ![SMTP-dotNet-client](/doc/smtp4dev_dotNet_client.png)
 
 ### Rabbit MQ (Version 3.8)
@@ -114,10 +115,9 @@ On the host, prepare the following directory structure:
     * Client configuration.
         * Server name: localhost
         * Port: 5672
-<br/>
+        
 * Data directory binding.
     * The container is preconfigured to mount data folders from the container to host.
-
     * On the host, prepare folders with the following structure:
 
             D:
