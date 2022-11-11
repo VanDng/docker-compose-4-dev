@@ -56,6 +56,9 @@ docker compose -f <DockerCompseFilePath> up -d <ServiceName>
             
             SELECT @@version
 
+* Known issue: Can not install full-text search. Use the container SQL Server 2019 instead.
+
+![SQL-2022-FTS-FAIL](/doc/sql2022_fts_fail.png)
 
 ### SQL Server 2019
 
