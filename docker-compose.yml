@@ -32,7 +32,8 @@ services:
             - sqlserver2019log:/var/opt/mssql/log
             - sqlserver2019secrets:/var/opt/mssql/secrets
             - sqlserver2019backup:/var/backups
-        image: mcr.microsoft.com/mssql/server:2019-latest
+        build:
+            dockerfile: Dockerfile.sqlserver2019
 
     smtp4dev:
         container_name: smtp4dev

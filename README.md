@@ -65,6 +65,7 @@ On the host, prepare the following directory structure:
         * Server name: localhost,1444
         * Username: sa
         * Password: MyStrong(!)Password
+    * <b>Full-text search is enabled.</b>
 <br/>
 * Data directory binding.
     * The container is preconfigured to mount data folders from the container to host.
